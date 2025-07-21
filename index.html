@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Virtual Business Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: bgColorChange 10s infinite alternate;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      transition: background 1s ease-in-out;
+    }
+
+    @keyframes bgColorChange {
+      0%   { background: linear-gradient(135deg, #e0f7fa, #fce4ec); }
+      50%  { background: linear-gradient(135deg, #f3e5f5, #d0f0c0); }
+      100% { background: linear-gradient(135deg, #fff9c4, #c8e6c9); }
+    }
+
+    .card {
+      background-color: #ffffffcc;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 350px;
+      width: 90%;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 5px 10px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      border: 1px solid #00796b;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-links a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #00796b;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+<div class="contact-links">
+  <!-- Email -->
+  <a href="mailto:jasmine@example.com" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/yourgithub" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+
+.contact-links a:hover {
+  color: #004d40;
+  transform: scale(1.3);
+}
+
+
+    .contact-links a:hover {
+      background-color: #00796b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="image.jpg" alt="Profile" class="profile-img">
+    <h1>Jasmine Rubavathy</h1>
+    <h2>Computer Science Student</h2>
+    <p>Passionate about web development, design, and creating user-friendly interfaces. Let's connect!</p>
+    <div class="contact-links">
+  <a href="mailto:jasmine@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/yourgithub" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <p style="margin-top:20px; font-size:14px;">Thanks for visiting my card! 😊</p>
+
+</div>
+
+  </div>
+</body>
+</html>
